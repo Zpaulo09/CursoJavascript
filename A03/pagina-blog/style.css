@@ -1,0 +1,95 @@
+/*reset básico da tela*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20 100px;
+}
+
+/*Aplicando estilos para o cabeçalho*/
+.cabecalho-blog{
+    background-color:rgb(128, 127, 127);
+    padding: 20px 0; /* espaçamento entre os elementos*/
+    border-bottom: 2px solid red;
+}
+.cabecalho-blog nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-blog h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(22, 22, 22);
+}
+.cabecalho-blog a{
+    text-decoration: none; /* tira a formatação do link html*/
+    color: inherit /*tira a cor vermelha quando clicamos no link*/
+}
+
+.cabecalho-blog ul{
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex; /* transforma a lista em um espaço flexivel*/
+    gap: 20px; /*adiciona um espaço entre cada item de lista*/
+    
+
+}
+/*estilos de layout principal*/
+conteudo-principal-blog{
+    padding: 20px 0;
+ /* ajuda o espaçamento entre o cabeçalho e conteudo*/
+}
+.layout-blog{
+    display: flex; /* vai permitir colocar uma barra lateral*/
+    gap: 75px;
+}
+
+.post{
+    flex: 1250px; /*faz com que o texto ocupe 3 vezes o espaço que está do lado (dependendo do numero)*/
+    background-color:rgb(243, 240, 240);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgb(22, 22, 22);
+}
+.post h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.post p {
+    color: rgb(34, 33, 32);
+    font-size: small;
+}
+.barra-lateral{
+    flex: 40px;
+    background-color: rgb(243, 240, 240);
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgb(34, 33, 32);
+}
+.barra-lateral a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(22, 22, 21);
+}
+.barra-lateral ul{
+    list-style: none;
+}
+.barra-lateral h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.rodape-blog{
+    text-align:center;
+    padding: 40px 0;
+    background-color: rgb(61, 56, 56);
+    color: brown;
+    font-size: smaller;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 

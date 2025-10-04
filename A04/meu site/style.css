@@ -1,0 +1,66 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.cabecalho-site{
+    display: flex;
+ 
+     justify-content: space-between; 
+      align-items: center; 
+      background-color: #333; 
+      color: #fff; 
+      padding: 20px; 
+}
+.cabecalho-site h1 {
+    margin: 0;
+}
+
+.cabecalho-site nav a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-left: 20px; 
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-wrap:wrap ; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+}
+.caixa-conteudo{
+    background-color: rgb(58, 58, 56);
+    color: #f0f0f0;
+    padding: 30px;
+    border-radius: 12px; 
+
+    box-shadow: 0 4px 8px rgb(36, 35, 35); 
+
+    flex: 1 1 300px; 
+
+    text-align: center;
+    
+}
+
+.rodape-site{
+    background-color: rgb(58, 58, 56);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 16px rgb(20, 20, 20);
+    color: #f0f0f0;
+}
+
+ @media screen and (max-width: 400px){
+    .cabecalho-site{
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .cabecalho-site nav {
+        margin-top: 10px;
+    }
+
+ } 

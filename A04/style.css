@@ -1,0 +1,103 @@
+/*Estilo geral para o corpo do site*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+/*CABEÇALHO*/
+/*Estilos gerais cabeçalho*/
+.cabecalho-site{
+    display: flex;/* permite que os elementos de um container
+     sejam organizados de forma flexivel, permite ajustar o alinhamento e a
+     distribuição de espaço*/
+     justify-content: space-between; /* JUSTIFY CONTENT serve para deinir onde elementos vão ficar SPACE BETWEEN permite
+      ajustar itens na extremidade*/
+      align-items: center; /*alinha os itens no centrp da vertical*/
+      background-color: #333; /*cor do plano de fundo*/
+      color: #fff; /*cor da fonte*/
+      padding: 20px; /*espaço interno entre o conteudo do elemento*/
+}
+.cabecalho-site h1 {
+    margin: 0;
+}
+
+.cabecalho-site nav a {
+    color: #fff; /*cor da fonte*/
+    text-decoration: none; /*formataçao de texto que permite decorar o texto escolhido*/
+    margin-left: 20px; /*espaçamento a esquerda dos elementos*/
+}
+
+.links:hover{ /*para alterar a cor, fonte e cursor a passar o cursor em cima da propriedade*/
+    color: #00ffff;
+    text-decoration: underline;
+    cursor:none
+}
+
+
+
+
+/*CONTEUDO PRINCIPAL*/
+/*estilos aplicado com conteudo principal do site*/
+.conteudo-principal{
+    display: flex;
+    flex-wrap:wrap ; /*permite que as seçoes quebrem linha*/
+    justify-content: center; /* centraliza as seçoes*/
+    gap: 20px; /* da espaços externos entre as seçoes*/
+    padding: 20px; /*espaços internos entre os elementos de uma seção*/
+}
+.caixa-conteudo{
+    background-color: rgb(58, 58, 56);
+    color: #f0f0f0;
+    padding: 30px;
+    border-radius: 12px; /* um raio de borda para não ficar 100% quadrada*/
+
+    box-shadow: 0 4px 8px rgb(36, 35, 35); /*BOX SHADOW permite a sombra no conteudo desejado,
+     espaço entre a linha final e a sombra/ deslocamento vertical /pixels que a sombra vai radiar/cor*/
+
+    flex: 1 1 300px; /*1 -> seção cresce até ocupar todo espaço disponivel
+    1- seção diminui para ocupar todo espaço disponivel
+    300px - determina o valor inicial, tamanho base da largura*/
+    text-align: justify;
+    
+}
+
+.botao{
+    background-color: rgb(0, 132, 255);
+    color: #f0f0f0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box shadow 0.3s; 
+}
+
+.botao:hover{
+    background-color: rgb(0, 114, 221);
+    transform: translateY(-1px);
+    box-shadow: 0 1px 2px rgb(0, 114, 221);
+}
+
+.rodape-site{
+    background-color: rgb(58, 58, 56);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 16px rgb(20, 20, 20);
+    color: #f0f0f0;
+}
+ /*media query -> funciona como um "se, então" para a responsavidade, de forma que:
+ se o site tiver a dimensão x, então alugum ajuste será aplicado no layout para garantir
+ a consistencia e visibilidade das informações*/
+
+ @media screen and (max-width: 580px){
+    .cabecalho-site{
+        flex-direction: column; /*em telas menores, o cabeçalho se empilha*/
+        text-align: center;
+    }
+    
+    .cabecalho-site nav {
+        margin-top: 10px;
+    }
+
+ } 
+
+ 
