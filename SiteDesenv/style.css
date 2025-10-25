@@ -1,0 +1,86 @@
+*{
+    padding: 0;}
+    
+    body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 20px;}
+    
+    .cabecalho{
+    background-color: rgb(20, 20, 20);
+    color: rgb(248, 248, 248);
+    padding: 10px 0;
+    }
+    
+    .cabecalho ul a:hover{
+    text-decoration: underline;}
+    
+    .cabecalho nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;}
+    
+    
+    .cabecalho a{
+    text-decoration: none;
+    color: inherit;}
+    
+    .cabecalho ul {
+    list-style: none;
+    display: flex;
+    padding: 0 20px;
+    gap: 30px;
+    color: rgb(248, 248, 248);
+    }
+    
+    
+    .cabecalho h1{
+    font-size:xx-large;
+    padding: 0 20px;}
+    
+    
+    
+    .desenvolvimento{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 140px;
+    padding: 10px;
+    }
+    
+    .caixa {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 20px 20px;
+    box-shadow: 0 2px 5px rgb(199, 199, 199);
+    text-align:start;}
+    
+    .barra-lateral{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 0 5px;
+    box-shadow: 0 2px 5px rgb(199, 199, 199)}
+    
+    .barra-lateral ul{
+    list-style-position: inside;
+    }
+    
+    .barra-lateral a{
+    color: rgb(0, 183, 255);
+    text-decoration: none;}
+    
+    .barra-lateral a:hover{
+    text-decoration: underline;}
+    
+    .rodape{
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    text-align: center;
+    color: rgb(248, 248, 248);}
+    
+    
